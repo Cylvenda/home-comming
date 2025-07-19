@@ -1,0 +1,94 @@
+.services-container {
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.services-container .head {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+    background-color: rgb(39, 181, 238);
+
+    h3 {
+        font-size: 40px;
+        padding: 7px;
+    }
+}
+
+.services-container .pricing-details {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.show-service {
+    background: #2A7B9B;
+    background: linear-gradient(10deg, rgb(39, 181, 238) 0%, rgb(31, 204, 187) 100%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 1s ease;
+    color: white;
+
+    h3 {
+        padding: 7px;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 2rem;
+        color: yellow;
+    }
+
+    p {
+        padding: 7px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .price {
+        padding: 15px;
+    }
+
+    ul {
+        padding: 19px;
+
+        li {
+            padding: 5px;
+        }
+
+        li::marker {
+            color: yellow;
+            font-size: 20px;
+        }
+    }
+
+    button {
+        background-color: blue;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(3, 3, 114);
+    }
+}
+
+.show-service:hover {
+    border: 1px solid black;
+    padding: 13px;
+    transition: 1s ease;
+}

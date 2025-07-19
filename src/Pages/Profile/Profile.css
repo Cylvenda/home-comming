@@ -1,0 +1,77 @@
+.profile-container {
+    padding: 20px;
+    margin-left: 80px;
+    transition: 1s ease;
+
+    hr {
+        padding: 10px;
+        border: none;
+        visibility: hidden;
+    }
+}
+
+.profile-container .forms-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-container .form-details, .profile-container .form-password {
+    padding: 20px;
+    background-color:  rgba(188, 196, 196, 1);
+    border-radius: 4px;
+    width: 100%;
+
+    h3 {
+        padding: 10px;
+        font-weight: 500;
+        border-bottom: black solid 1px;
+    }
+}
+
+.profile-container .form-details .form-content, .profile-container .form-password .form-content {
+    padding: 5px;
+}
+
+.profile-container .form-details .form-content label, .profile-container .form-password .form-content label {
+    padding: 5px;
+}
+
+.profile-container .form-details form .button, .profile-container .form-password form .button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.profile-container .form-details form button, .profile-container .form-password form button {
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(34, 193, 195, 1);
+}
+
+.link {
+    background-color:  rgba(188, 196, 196, 1);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+    span {
+        cursor: pointer;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .profile-container .forms-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .profile-container .form-details .form-content, .profile-container .form-password .form-content {
+        padding: 5px;
+    }
+
+    .profile-container .form-details form, .profile-container .form-password form {
+        margin-top: 5px;
+    }
+}

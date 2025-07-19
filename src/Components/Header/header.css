@@ -1,0 +1,103 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+    background-color: #2A7B9B;
+    box-shadow: 0px 10px 10px -5px grey;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.header {
+    box-shadow: none;
+    border-bottom: 1px solid black;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    list-style-type: none;
+}
+
+header ul li, .brand, .button .menu, .button span {
+    cursor: pointer;
+    transition: 1s;
+    color: white;
+}
+
+header ul li:hover, .brand:hover, .button .menu:hover, .button span:hover {
+    padding: 1px;
+}
+
+header .button, .menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+header .button .register{
+    background-color: yellowgreen;
+    border: 1px solid black;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s ease;margin-top: -10px;
+}
+header .button .register:hover{
+    background-color: rgb(166, 241, 26);
+    transition: 1s ease;
+}
+
+header .menu {
+    display: none;
+}
+
+.sub-menu {
+    background-color: gray;
+    padding: 15px;
+    position: absolute;
+    right: 2%;
+    top: 5rem;
+    border: 1px solid black;
+    border-radius: 7px 0px 7px 7px;
+
+    h3 {
+        padding: 10px;
+    }
+}
+
+.sub-menu ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    list-style-type: none;
+}
+
+.sub-menu span {
+    display: flex;
+    flex-direction: row;
+    padding: 7px;
+    gap: 10px;
+    margin-left: 6px;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+.sub-menu span:hover {
+    margin-left: 8px;
+}
+
+@media only screen and (max-width: 500px) {
+    header ul {
+        display: none;
+    }
+
+    header .menu {
+        display: block;
+    }
+}

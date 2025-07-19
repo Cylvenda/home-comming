@@ -1,0 +1,88 @@
+nav {
+    background-color: whitesmoke;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    transition: 1s ease;
+    border: 1px solid black;
+}
+
+nav .user-img {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 0px 10px;
+
+}
+
+nav h3 {
+    padding: 20px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 15px;
+}
+
+nav .user {
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+nav .user img {
+    border-radius: 10px;
+}
+
+nav ul li {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+nav ul li span, nav .user h3 {
+    transition: 1s ease;
+}
+
+nav ul li, nav h3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    margin-left: 3px;
+    background-color: antiquewhite;
+}
+
+.hide-nav {
+    width: 80px;
+    transition: 1s ease;
+
+}
+
+.hide-nav .user img{
+    width: 60px;
+    height: 50px;
+    border-radius: 3px;
+}
+.hide-nav ul li img {
+    margin-left: 5px;
+}
+
+.hide-nav .user {
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 6px;
+    transition: 1s ease;
+}
+
+.hide-nav li span, .hide-nav .user h3 {
+    font-size: 0;
+    transition: 1s ease;
+}
