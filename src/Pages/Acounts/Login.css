@@ -22,6 +22,7 @@
     justify-content: space-between;
     gap: 40px;
     padding: 10px;
+    color: yellow;
 }
 
 .form-container .form-header span {
@@ -54,7 +55,7 @@
     gap: 10px;
 }
 
-.form-container .form-content label{
+.form-container .form-content label {
     padding: 6px;
 }
 
@@ -129,7 +130,13 @@ form .sign-up .red {
     color: red;
 }
 
-.Login-container .form-container .social{
+.cont {
+    margin: 4px;
+    text-align: center;
+    color: yellow;
+}
+
+.Login-container .form-container .social {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -137,36 +144,78 @@ form .sign-up .red {
     gap: 20px;
     padding: 7px;
 
-    img{
+    img {
         cursor: pointer;
     }
-    .google{
+
+    .google {
         border-radius: 5px;
     }
 }
 
 .spinner {
-  width: 20px;
-  height: 20px;
-  border: 3px solid white;
-  border-top: 3px solid rgb(14, 97, 136);
-  border-radius: 50%;
-  animation: spin 0.7s linear infinite;
-  margin: auto;
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    border-top: 3px solid rgb(14, 97, 136);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    margin: auto;
 }
-.footer-set{
+
+.footer-set {
     position: absolute;
     bottom: 0%;
     width: 100%;
 }
+
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-@media only screen and (max-width: 0px) {
+@media only screen and (max-width: 1000px) {
+    .Login-container .form-container {
+        width: 50%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .Login-container .form-container {
+        width: 60%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Login-container .form-container {
+        width: 80%;
+        padding: 5px;
+        border-radius: none;
+    }
+
+    .form-container .input-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Login-container .form-container .social img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
     .Login-container .form-container {
         width: 100%;
         padding: 5px;
+        border-radius: 0px;
     }
+
 }

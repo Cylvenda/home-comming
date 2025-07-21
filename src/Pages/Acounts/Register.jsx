@@ -124,9 +124,10 @@ const Register = () => {
                         <button type="submit" disabled={isLoading}>
                             {isLoading ? <div className="spinner"></div> : 'Register'}
                         </button>
-
+                        <span className='cont'>or continue with</span>
                         <div className="social">
-                            <img src={assets.apple} width={50} alt="" /> <img className='google' src={assets.google} width={50} alt="" />
+
+                            <img src={assets.apple} width={40} alt="" /> <img className='google' src={assets.google} width={40} alt="" />
                         </div>
 
                         <div className="sign-up">

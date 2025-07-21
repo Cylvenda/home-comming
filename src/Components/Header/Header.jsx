@@ -6,7 +6,7 @@ import {  toast } from 'react-toastify'
 import { LogOutIcon, Menu, ShieldClose, StampIcon, User, User2 } from 'lucide-react'
 
 
-const Header = ({ setShowForm }) => {
+const Header = () => {
 
     const { token, setToken, nav, setNav, subMenu, setSubMenu } = useContext(StoreContext)
     const navigate = useNavigate()
@@ -31,21 +31,21 @@ const Header = ({ setShowForm }) => {
         <>
             <header className={!token === '' ? 'header' : ''}>
                 <div className="brand">
-                    <span onClick={() => navigate('/Dashboard')}>Home Coming</span>
+                    <span onClick={() => navigate('/')}>Home Coming</span>
                 </div>
 
                 {token ?
                     <div className="button">
-                        {nav === "hide-nav" ? <span onClick={() => setNav("")}><Menu  /></span> :
-                            <span onClick={() => setNav("hide-nav")}><Menu /></span>}
+                        {nav === "hide-nav" ? <span onClick={() => setNav("")}><Menu  color='black'/></span> :
+                            <span onClick={() => setNav("hide-nav")}><Menu color='black'/></span>}
 
                         <div className="menus">
-                            {subMenu ? <span onClick={() => setSubMenu(false)} ><ShieldClose /></span> :
-                                <span onClick={() => setSubMenu(true)} ><User2 /></span>}
+                            {subMenu ? <span onClick={() => setSubMenu(false)} ><ShieldClose color='black'/></span> :
+                                <span onClick={() => setSubMenu(true)} ><User2 color='black'/></span>}
                         </div>
                     </div> :
                     <div className="button">
-                        <span onClick={() => setShowForm(true)}>Login</span>
+                        <span onClick={() => navigate('/Login')}>Login</span>
                         <span  onClick={() => navigate('/Register')}> <button className='register' type="button">Register</button> </span>
                     </div>
                 }

@@ -1,5 +1,5 @@
 nav {
-    background-color: whitesmoke;
+    background-color: #2A7B9B;
     width: 200px;
     height: 100%;
     display: flex;
@@ -38,7 +38,7 @@ nav .user img {
 }
 
 nav ul li {
-    background-color: white;
+    background-color: #41bdee;;
     border-radius: 5px;
     margin-top: 7px;
 }
@@ -57,7 +57,7 @@ nav ul li, nav h3 {
 
 nav ul li:hover {
     margin-left: 3px;
-    background-color: antiquewhite;
+    background-color: #2A7B9B;;
 }
 
 .hide-nav {

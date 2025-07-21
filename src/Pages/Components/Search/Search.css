@@ -1,3 +1,7 @@
-.search-container{
-    background-color: blue;
+.search-container {
+    min-height: 100vh;
+}
+
+.search-container form {
+    background-color: #2A7B9B;
 }

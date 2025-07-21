@@ -17,7 +17,7 @@
 
 .profile-container .form-details, .profile-container .form-password {
     padding: 20px;
-    background-color:  rgba(188, 196, 196, 1);
+    background-color:  #2A7B9B;
     border-radius: 4px;
     width: 100%;
 
@@ -48,7 +48,7 @@
 }
 
 .link {
-    background-color:  rgba(188, 196, 196, 1);
+    background-color:  #2A7B9B;
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 4px;

@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Dashboard.css'
-import Header from '../../Components/Header/Header'
 import Navbar from '../../Components/Navbar/Navbar'
 import Search from '../Components/Search/Search'
+import { StoreContext } from '../../Components/Context/StoreContextProvider'
 
 const Dashboard = () => {
+
+      const {  nav, URL, bodySize } = useContext(StoreContext)
 
   return (
       <>
         <Navbar />
-        <Search />
+        <div className={'dashboard'} style={nav === "" ? bodySize : null} >
+          <Search />
+        </div>
     </>
   )
 }

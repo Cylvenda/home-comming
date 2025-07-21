@@ -135,7 +135,6 @@ const Profile = () => {
 
     return (
         <>
-            <Verify />
             <Navbar />
 
             <div className="profile-container" style={nav === "" ? bodySize : null} >

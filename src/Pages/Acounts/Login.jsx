@@ -5,6 +5,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../Components/Context/StoreContextProvider';
+import Footer from '../../Components/Footer/Footer';
 import { assets } from '../../assets/assets';
 
 const Login = () => {
@@ -72,6 +73,7 @@ const Login = () => {
     };
 
     return (
+         <>
         <div className='Login-container'>
             <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" className="form-container">
                 <div className="form-header">
@@ -118,6 +120,11 @@ const Login = () => {
                 </form>
             </div>
         </div>
+
+                    <div className="footer-set">
+                <Footer />
+            </div>
+           </>
     )
 }
 
