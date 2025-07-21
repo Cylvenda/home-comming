@@ -7,6 +7,9 @@ import { useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../Components/Context/StoreContextProvider';
 import Footer from '../../Components/Footer/Footer';
 import { assets } from '../../assets/assets';
+import { Container } from 'lucide-react';
+import { TabContainer } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
 
 const Login = () => {
 
@@ -38,7 +41,7 @@ const Login = () => {
 
 
         if (!isValid) {
-            console.log("Form does not meet the requirements.");
+            // console.log("Form does not meet the requirements.");
             return; // Stop if validation fails
         }
 
@@ -73,13 +76,13 @@ const Login = () => {
     };
 
     return (
-         <>
+         <TabContainer>
         <div className='Login-container'>
             <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" className="form-container">
                 <div className="form-header">
                     <h3>Login To Home Comming</h3>
                 </div>
-                <form onSubmit={formHandler}>
+                <Form onSubmit={formHandler}>
 
                     <div className="input-flex">
                         <div className="form-content">
@@ -117,14 +120,14 @@ const Login = () => {
 
                     </div>
 
-                </form>
+                </Form>
             </div>
         </div>
 
                     <div className="footer-set">
                 <Footer />
             </div>
-           </>
+           </TabContainer>
     )
 }
 
